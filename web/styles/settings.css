@@ -1263,9 +1263,19 @@ label.preferences-radio-choice-label {
     font-size: 1.2em;
 }
 
-.invite-user-link .fa-user-plus {
+.button .zulip-icon-user-plus::before,
+.button .zulip-icon-user-x::before,
+.button .zulip-icon-user-cog::before {
+    vertical-align: middle;
+}
+
+.invite-user-link .zulip-icon-user-plus {
     text-decoration: none;
     margin-right: 5px;
+
+    &::before {
+        vertical-align: middle;
+    }
 }
 
 /* -- new settings overlay -- */
